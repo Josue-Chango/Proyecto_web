@@ -17,6 +17,7 @@
             background-color: #ffcc00;
             color: #000;
             padding: 5px 0;
+            background-color: #333333; 
         }
 
         .navbar {
@@ -39,6 +40,7 @@
         }
 
         .hero-section .video-wrap video {
+            display : none;
             position: absolute;
             top: 0;
             left: 0;
@@ -74,6 +76,11 @@
         .hero-section {
             margin-bottom: 0 !important;
         }
+        .text-area{
+            resize: none; 
+            width: 800px;
+            height: 350px;
+        }
     </style>
 </head>
 
@@ -83,13 +90,14 @@
             <div class="col-lg-8 col-12 mx-auto">
 
                 <form class="custom-form ticket-form mb-5 mb-lg-0" action="servidor.html" method="get">
-                    <h2 class="text-center mb-4">¡Consigue tus entradas!</h2>
+                    <h2 class="text-center mb-4">Consigue tus muebles ¡YA!</h2>
 
                     <div class="ticket-form-body">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
                                 <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control"
-                                    placeholder="Nombre completo" required>
+                                    placeholder="Nombre completo" required
+                                    pattern="[a-z/A-Z]">
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-12">
@@ -100,9 +108,9 @@
                         </div>
 
                         <input type="tel" class="form-control" name="ticket-form-phone"
-                            placeholder="Teléfono 099-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                            placeholder="Teléfono 0991234567" pattern="[0-9]{10}" required="">
 
-                        <h6>Elige tu tipo de entrada</h6>
+                        <h6>Elige tu método de pago</h6>
 
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
@@ -110,7 +118,7 @@
                                     <input class="form-check-input" type="radio" name="TicketForm"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
-                                        General $5.99
+                                        Efectivo
                                     </label>
                                 </div>
                             </div>
@@ -120,7 +128,7 @@
                                     <input class="form-check-input" type="radio" name="TicketForm"
                                         id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                        Tribuna $9.99
+                                        Transferencia
                                     </label>
                                 </div>
                             </div>
@@ -130,7 +138,7 @@
                                     <input class="form-check-input" type="radio" name="TicketForm"
                                         id="flexRadioDefault3">
                                     <label class="form-check-label" for="flexRadioDefault3">
-                                        Palco $14.99
+                                        A crédito
                                     </label>
                                 </div>
                             </div>
@@ -138,11 +146,11 @@
 
                         </div>
 
-                        <input type="number" name="ticket-form-number" id="ticket-form-number" class="form-control"
-                            placeholder="Número de entradas" required>
+                        <!-- <input type="number" name="ticket-form-number" id="ticket-form-number" class="form-control"
+                            placeholder="Número de entradas" required> -->
 
-                        <textarea name="ticket-form-message" rows="3" class="form-control" id="ticket-form-message"
-                            placeholder="Comentarios adicionales"></textarea>
+                        <textarea name="ticket-form-message" rows="3" class="form-control terxt_area" id="ticket-form-message"
+                            placeholder="Comentarios sobre el producto que va a comprar"></textarea>
 
                         <div class="col-lg-4 col-md-10 col-8 mx-auto">
                             <button type="submit" class="form-control">Comprar</button>

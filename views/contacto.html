@@ -93,7 +93,8 @@
                     type="text" 
                     name="contact-name" 
                     id="contact-name" 
-                    class="form-control rounded-0 border-0 border-bottom" required>
+                    class="form-control rounded-0 border-0 border-bottom" required
+                    pattern="[a-z/A-Z]">
               </div>
 
               <div class="col-lg-6 col-md-6 col-12 mb-3">
@@ -122,7 +123,12 @@
                 name="contact-message" 
                 rows="4" 
                 class="form-control rounded-0 border-0 border-bottom" 
-                id="contact-message"></textarea>
+                id="contact-message"
+                style="resize: none; 
+                width: 800px;
+                height: 150px;"
+                >
+              </textarea>
             </div>
 
             <div class="text-center">
