@@ -1,0 +1,572 @@
+<head>
+    <style>
+        body,
+        main,
+        header,
+        nav,
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        .site-header {
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 5px 0;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 4;
+            background: black !important;
+            box-shadow: none;
+            border: none;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section .video-wrap video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section h1,
+        .hero-section small,
+        .hero-section a,
+        .hero-section h5 {
+            color: white;
+        }
+
+        .navbar,
+        .site-header,
+        .hero-section {
+            margin-bottom: 0 !important;
+        }
+
+        body {
+            background-image: url('./public/img/FEF_Lp.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<section class="artists-section section-padding" id="section_3">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-12 text-center">
+                <h2 style="color: white;" class="mb-4">Conoce nuestros equipos</h1>
+            </div>
+
+            <div class="col-lg-5 col-12">
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/idv2.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Deportivo Profesional Independiente del Valle
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            1 de marzo de 1958
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Banco Guayaquil
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@IDVTV">IDV</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="artists-thumb">
+                    <img src="./public/img/bsc.png" class="artists-image img-fluid">
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Barcelona Sporting Club
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            1 de mayo de 1925
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Monumental Isidro Romero Carbo
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@BarcelonaSportingClub">BSC</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/lib.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Libertad F.C.
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            17 de mayo de 2017
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Reina del Cisne
+
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@libertadfcoficial">Libertad</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/Macara.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Deportivo Macará
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            25 de agosto de 1939
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Bellavista
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@clubdeportivomacara3986">Macará</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/emelec.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Sport Emelec
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            28 de abril de 1929
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            George Capwell
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@emelecweb">Emelec</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/nacional.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Deportivo El Nacional
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            6 de febrero de 1963
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Olímpico Atahualpa
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@elnacionaec">El Nacional</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/manta.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Manta Fútbol Club
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            27 de julio de 1998
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Jocay
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@mantafutbolclub">Manta</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/tecnico.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Deportivo Técnico Universitario
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            26 de marzo de 1971
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Bellavista
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@FormativasTecnicoUniversitario">Técnico</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="col-lg-5 col-12">
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/ldu.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Liga Deportiva Universitaria
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            23 de octubre de 1918
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Rodrigo Paz Delgado
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@ldu_oficial">LDU</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="artists-thumb">
+                    <img src="./public/img/Ucatólica.png" class="artists-image img-fluid">
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Deportivo Universidad Católica
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            15 de mayo de 1963
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Olímpico Atahualpa
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Instragram:</strong>
+                            <a href="https://www.instagram.com/ucatolicaec/?hl=es">Ucatólica</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/Orense.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Orense Sporting Club
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            15 de diciembre de 2009
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            9 de Mayo
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@orensesportingclub_oficial">Orense</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/cuenca.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Club Deportivo Cuenca
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            4 de marzo de 1971
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Alejandro Serrano Aguilar
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@dcuenca_oficial">Deportivo Cuenca</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/aucas.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Sociedad Deportiva Aucas
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            6 de febrero de 1945
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Gonzalo Pozo Ripalda
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Canal de YouTube:</strong>
+                            <a href="https://www.youtube.com/@aucas45">Aucas</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/delfin.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Delfín Sporting Club
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            1 de marzo de 1989
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Jocay
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Instagram:</strong>
+                            <a href="https://www.instagram.com/delfinsportingclub/">Delfín</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/mushuc.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Mushuc Runa Sporting Club
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            2 de enero de 2003
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Olímpico de Riobamba
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Instagram:</strong>
+                            <a href="https://www.instagram.com/mushucrunasc_/?hl=es">Mushuc Runa</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="./public/img/vino.png" class="artists-image img-fluid">
+                    </div>
+
+                    <div class="artists-hover">
+                        <p>
+                            <strong>Nombre:</strong>
+                            Vinotinto del Ecuador Fútbol Club
+                        </p>
+
+                        <p>
+                            <strong>Fundación:</strong>
+                            11 de abril de 1992
+                        </p>
+
+                        <p>
+                            <strong>Estadio:</strong>
+                            Olímpico Atahualpa
+                        </p>
+
+                        <hr>
+
+                        <p class="mb-0">
+                            <strong>Instagram:</strong>
+                            <a href="https://www.instagram.com/vinotintoecuador/?hl=es">Vinotinto</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,327 @@
+<head>
+    <style>
+        body,
+        main,
+        header,
+        nav,
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        .site-header {
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 5px 0;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 4;
+            background: black !important;
+            box-shadow: none;
+            border: none;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section .video-wrap video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section h1,
+        .hero-section small,
+        .hero-section a,
+        .hero-section h5 {
+            color: white;
+        }
+
+        .navbar,
+        .site-header,
+        .hero-section {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+
+<section class="about-section section-padding" id="historia">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                <div class="services-info">
+                    <h2 class="text-white mb-4">El Nacimiento de una Pasión</h2>
+
+                    <p class="text-white">
+                        El fútbol ecuatoriano nació oficialmente en 1925, con la creación de la <strong>Federación
+                            Deportiva Nacional del Ecuador</strong>.
+                        Sin embargo, su historia comenzó mucho antes, en las calles y colegios de Guayaquil y Quito,
+                        donde los primeros aficionados
+                        conocieron este deporte gracias a marineros y extranjeros a finales del siglo XIX.
+                    </p>
+
+                    <p class="text-white">
+                        En 1899 se fundó el <strong>Guayaquil Sport Club</strong>, considerado el primer equipo formal
+                        del país.
+                        Con el paso del tiempo surgieron otros clubes históricos como <strong>Barcelona SC
+                            (1925)</strong>,
+                        <strong>Emelec (1929)</strong> y <strong>El Nacional (1964)</strong>, que marcaron una nueva era
+                        en el balompié nacional.
+                    </p>
+
+                    <h5 class="text-warning mt-4">El nacimiento de la FEF</h5>
+                    <p class="text-white">
+                        En 1967 se constituyó oficialmente la <strong>Federación Ecuatoriana de Fútbol (FEF)</strong>,
+                        encargada de organizar torneos,
+                        regular los clubes y representar al país ante la FIFA. Desde entonces, Ecuador ha participado en
+                        múltiples torneos internacionales,
+                        incluyendo la <strong>Copa América</strong> y las <strong>Copas del Mundo</strong>.
+                    </p>
+
+                    <h5 class="text-warning mt-4">Los grandes momentos de la Tri</h5>
+                    <p class="text-white">
+                        La selección ecuatoriana logró su primera clasificación al <strong>Mundial de Corea-Japón
+                            2002</strong>,
+                        un hecho histórico que encendió la pasión en todo el país. Posteriormente participó también en
+                        <strong>Alemania 2006</strong>, <strong>Brasil 2014</strong> y <strong>Catar 2022</strong>.
+                    </p>
+
+                    <p class="text-white">
+                        Hoy en día, el fútbol sigue siendo parte esencial de la identidad ecuatoriana, uniendo a
+                        millones de hinchas bajo los colores de la <strong>Tri</strong>.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-12">
+                <div class="about-text-wrap position-relative" style="max-width: 800px; margin: 0 auto">
+                    <img src="./public/img/guayaquilClubSport.jpg" class="about-image img-fluid rounded shadow-lg"
+                        style="width: 100%; height: auto; min-height: 500px; object-fit: cover">
+
+                    <div class="about-text-info d-flex flex-column justify-content-center align-items-center text-center"
+                        style="position: absolute;
+                                bottom: 20px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background: rgba(0, 0, 0, 0.8);
+                                color: white;
+                                padding: 1.5rem;
+                                border-radius: 8px;
+                                max-width: 90%;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                        <h3 style="font-size: 1.6rem; color: #f1c40f;">Primer Equipo de Guayaquil</h3>
+                        <p class="mb-0" style="font-size: 1rem; line-height: 1.5">
+                            Fundado el 23 de abril de 1899, el <strong>Guayaquil Sport Club</strong> fue pionero en la
+                            práctica del fútbol organizado en Ecuador.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row mt-5">
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="ratio ratio-16x9 shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/rLlL8cR3G_0" title="Historia del fútbol ecuatoriano"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="text-center text-white mt-3">Video: La evolución del fútbol ecuatoriano a lo largo de los
+                    años.</p>
+                <div class="ratio ratio-16x9 shadow-lg">
+                    <iframe src="https://www.youtube.com/embed/MNhiN7bftRA" title="Historia del fútbol ecuatoriano"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <p class="text-center text-white mt-3">Video: El gol de la clasificación mundial.</p>
+            </div>
+
+            <div class="col-lg-6 col-12 d-flex flex-wrap justify-content-center">
+                <img src="./public/img/Ecuador1.png" class="img-fluid rounded m-2 shadow"
+                    style="width: 45%; min-width: 200px;">
+                <img src="./public/img/Ecuador2.png" class="img-fluid rounded m-2 shadow"
+                    style="width: 45%; min-width: 200px;">
+                <img src="./public/img/Ecuador3.jpg" class="img-fluid rounded m-2 shadow"
+                    style="width: 45%; min-width: 200px;">
+                <img src="./public/img/Ecuador5.jpg" class="img-fluid rounded m-2 shadow"
+                    style="width: 45%; min-width: 200px;">
+                <img src="./public/img/Ecuador6.avif" class="img-fluid rounded m-2 shadow"
+                    style="width: 45%; min-width: 200px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center text-warning mb-4">Logros de los Clubes Ecuatorianos</h2>
+                <p class="text-center text-white mb-5">
+                    A lo largo de los años, los clubes ecuatorianos han alcanzado hitos históricos en torneos nacionales
+                    e internacionales,
+                    llevando el nombre del país a lo más alto del fútbol sudamericano.
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="card bg-dark text-white shadow-lg border-0">
+                    <img src="./public/img/ldulib.jpg"
+                        class="card-img-top" alt="LDU Quito campeon Libertadores">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Liga Deportiva Universitaria de Quito</h4>
+                        <p class="card-text">
+                            LDU Quito ha sido el club ecuatoriano más exitoso a nivel internacional.
+                            Ganó la <strong>Copa Libertadores en 2008</strong>, la <strong>Copa Sudamericana en 2009 y
+                                2023</strong>
+                            y la <strong>Recopa Sudamericana</strong> en 2009 y 2010.
+                            Fue el primer equipo ecuatoriano en conquistar títulos continentales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="card bg-dark text-white shadow-lg border-0">
+                    <img src="./public/img/bscsub.jpg"
+                        class="card-img-top" alt="Barcelona SC estadio">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Barcelona Sporting Club</h4>
+                        <p class="card-text">
+                            Fundado en 1925, Barcelona SC es el equipo más laureado del país, con múltiples títulos
+                            nacionales.
+                            Ha sido finalista de la <strong>Copa Libertadores</strong> en 1990 y 1998,
+                            siendo el primer club ecuatoriano en alcanzar esa instancia.
+                            Su hinchada, la “Sur Oscura”, es considerada una de las más grandes de Sudamérica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="card bg-dark text-white shadow-lg border-0">
+                    <img src="./public/img/emelecpc.jpg"
+                        class="card-img-top" alt="Emelec estadio Capwell">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Club Sport Emelec</h4>
+                        <p class="card-text">
+                            Emelec, fundado en 1929, es reconocido por su consistencia y estilo de juego ofensivo.
+                            Ha obtenido numerosos títulos nacionales y ha representado con orgullo al Ecuador en la
+                            <strong>Copa Libertadores</strong>
+                            y la <strong>Copa Sudamericana</strong>.
+                            Su estadio, el George Capwell, es uno de los más modernos del país.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="card bg-dark text-white shadow-lg border-0">
+                    <img src="./public/img/idvrc.jpg"
+                        class="card-img-top" alt="Independiente del Valle">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Independiente del Valle</h4>
+                        <p class="card-text">
+                            Con una filosofía basada en la formación juvenil y la innovación,
+                            <strong>Independiente del Valle</strong> se ha consolidado como potencia moderna del fútbol
+                            ecuatoriano.
+                            Ganó la <strong>Copa Sudamericana</strong> en 2019 y 2022, además de la <strong>Recopa
+                                Sudamericana</strong> en 2023.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center text-warning mb-4">Canciones Emblemáticas del Ecuador</h2>
+                <p class="text-center text-white mb-4">
+                    Disfruta de algunas de las canciones más representativas del Ecuador,
+                    que reflejan el espíritu, la cultura y la alegría de nuestro país.
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-3">
+                <div class="card bg-dark text-white shadow-lg border-0 p-3">
+                    <h5 class="text-warning">Himno Nacional del Ecuador</h5>
+                    <audio controls style="width: 100%;">
+                        <source src="./public/audio/Himno Nacional del Ecuador [Original] con letra.mp3"
+                            type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-3">
+                <div class="card bg-dark text-white shadow-lg border-0 p-3">
+                    <h5 class="text-warning">Ecuador Siempre Primero</h5>
+                    <audio controls style="width: 100%;">
+                        <source src="./public/audio/QUIERO AMANECER SOÑANDO -ECUADOR.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-3">
+                <div class="card bg-dark text-white shadow-lg border-0 p-3">
+                    <h5 class="text-warning">Si se puede</h5>
+                    <audio controls style="width: 100%;">
+                        <source src="./public/audio/Ecuador, Si Se Puede.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-3">
+                <div class="card bg-dark text-white shadow-lg border-0 p-3">
+                    <h5 class="text-warning">Solo tú tricolor</h5>
+                    <audio controls style="width: 100%;">
+                        <source src="./public/audio/Solo tú tricolor.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
