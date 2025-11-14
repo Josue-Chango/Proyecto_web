@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Muebles</title>
+  <style>
+    /* --- Estilos Generales y Reset --- */
+    body,
+    main,
+    header,
+    nav,
+    section {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* --- Estilos de Cabecera y Navegación --- */
+    .site-header {
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+      background-color: #000000;
+      /* Color primario */
+      color: #000;
+      padding: 5px 0;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 4;
+      background: black !important;
+      box-shadow: none;
+      border: none;
+    }
+
+    .navbar,
+    .site-header {
+      margin-bottom: 0;
+    }
+
+    /* --- SECCIÓN DE PRODUCTOS --- */
+    .artists-section {
+      padding: 60px 0;
+    }
+
+    .artists-thumb {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    .artists-image-wrap {
+      height: 350px;
+      /* Altura fija para las imágenes */
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .artists-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    /* Contenedor de información al pasar el ratón */
+    .artists-hover {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      width: 95%;
+      height: 90%;
+      background: rgba(0, 0, 0, 0.85);
+      /* Fondo oscuro semi-transparente */
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 10;
+    }
+
+    .artists-thumb:hover .artists-hover {
+      opacity: 1;
+    }
+
+    .artists-thumb:hover .artists-image {
+      transform: scale(1.1);
+    }
+
+    .artists-hover p {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .artists-hover strong {
+      color: #ffcc00;
+      /* Color primario para destacar */
+      margin-right: 5px;
+    }
+
+    .artists-hover hr {
+      border-color: rgba(255, 255, 255, 0.2);
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .artists-hover .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+      /* margin-top: 10px; */
+    }
+
+    .artists-hover .product-name {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .product-description {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    /* Estilos de la cuadrícula */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -15px;
+    }
+
+    .col-lg-5 {
+      flex: 0 0 45%;
+      /* Ajuste para que quepan dos columnas */
+      max-width: 45%;
+      padding: 0 15px;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    /* Responsividad */
+    @media (max-width: 992px) {
+      .col-lg-5 {
+        flex: 0 0 90%;
+        max-width: 90%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .artists-image-wrap {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="artists-section section-padding" id="section_3">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-12 text-center">
+          <h2 style="color: white;" class="mb-4">Conoce nuestros productos ModulART</h2>
+        </div>
+
+        <div class="col-lg-5 col-12">
+
+          <!-- PRODUCTO 1: Cocina Modular -->
+          <div class="artists-thumb">
+            <div class="artists-image-wrap">
+              <img src="../public/img/cocinas.png" class="artists-image img-fluid">
+            </div>
+
+            <div class="artists-hover">
+              <p class="product-name">Cocina Modular "Elegance"</p>
+              <p class="product-description">Diseño moderno con isla central y acabados en cuarzo blanco. Incluye
+                herrajes de cierre suave.</p>
+              <p>
+                <strong>Material:</strong>
+                Melamina RH y Cuarzo
+              </p>
+              <p>
+                <strong>Dimensiones:</strong>
+                3.5m x 2.5m (Personalizable)
+              </p>
+              <p>
+                <strong>Tiempo de Entrega:</strong>
+                4-6 semanas
+              </p>
+              <hr>
+              <p class="price mb-0">
+                Desde $3,850
+              </p>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 2: Closet de Lujo -->
+          <div class="artists-thumb">
+            <div class="artists-image-wrap">
+              <img src="./public/img/closets.png" class="artists-image img-fluid">
+            </div>
+
+            <div class="artists-hover">
+              <p class="product-name">Closet de Lujo "Walk-In Supreme"</p>
+              <p class="product-description">Espacio amplio con iluminación LED integrada, cajones con divisiones y
+                zapateras extraíbles.</p>
+              <p>
+                <strong>Material:</strong>
+                MDF Lacado (Alto brillo)
+              </p>
+              <p>
+                <strong>Dimensiones:</strong>
+                3m x 2.5m x 0.6m
+              </p>
+              <p>
+                <strong>Garantía:</strong>
+                5 años en herrajes
+              </p>
+              <hr>
+              <p class="price mb-0">
+                Desde $2,900
+              </p>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 3: Escritorio Ejecutivo -->
+          <div class="artists-thumb">
+            <div class="artists-image-wrap">
+              <img src="../public/img/peinadoras.png" class="artists-image img-fluid">
+            </div>
+
+            <div class="artists-hover">
+              <p class="product-name">Peinadora "Hollywood Glam"</p>
+              <p class="product-description">Tocador moderno con espejo de cuerpo entero y 10 bombillas LED de
+                intensidad regulable.</p>
+              <p>
+                <strong>Material:</strong>
+                MDF de alta densidad y Vidrio
+              </p>
+              <p>
+                <strong>Almacenamiento:</strong>
+                6 cajones con rieles telescópicos
+              </p>
+              <p>
+                <strong>Iluminación:</strong>
+                LED (Luz fría y cálida)
+              </p>
+              <hr>
+              <p class="price mb-0">
+                $599
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col-lg-5 col-12">
+
+          <!-- PRODUCTO 5: Centro de Entretenimiento -->
+          <div class="artists-thumb">
+            <div class="artists-image-wrap">
+              <img src="../public/img/entretenimiento.png" class="artists-image img-fluid">
+            </div>
+
+            <div class="artists-hover">
+              <p class="product-name">Centro de Entretenimiento "Cinema"</p>
+              <p class="product-description">Diseño flotante con paneles texturizados y compartimentos cerrados para
+                consolas y equipos.</p>
+              <p>
+                <strong>Material:</strong>
+                Melamina y Vidrio Templado
+              </p>
+              <p>
+                <strong>Tamaño de TV:</strong>
+                Hasta 75 pulgadas
+              </p>
+              <p>
+                <strong>Peso Máximo:</strong>
+                80 kg
+              </p>
+              <hr>
+              <p class="price mb-0">
+                $950
+              </p>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 6: Biblioteca de Pared -->
+          <div class="artists-thumb">
+            <div class="artists-image-wrap">
+              <img src="../public/img/puertas.png" class="artists-image img-fluid">
+            </div>
+
+            <div class="artists-hover">
+              <p class="product-name">Puerta Modular "Intelecto"</p>
+              <p class="product-description">Añade un toque de sofisticación con puertas personalizadas, diseñadas para
+                complementar tu hogar con estilo y seguridad..</p>
+              <p>
+                <strong>Material:</strong>
+                Madera Sólida de Roble
+              </p>
+              <p>
+                <strong>Cerradura:</strong>
+                Sistema de anclaje de 5 putnos
+              </p>
+              <p>
+                <strong>Acabado:</strong>
+                Resistente a humedad y rayones
+              </p>
+              <hr>
+              <p class="price mb-0">
+                Desde $1,200
+              </p>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 4: Mueble de Baño -->
+          <div class="artists-thumb">
+            <div class="artists-image-wrap">
+              <img src="../public/img/muebles.png" class="artists-image img-fluid">
+            </div>
+
+            <div class="artists-hover">
+              <p class="product-name">Mueble de Baño "Aqua"</p>
+              <p class="product-description">Resistente a la humedad, con lavabo integrado y amplio espacio de
+                almacenamiento inferior.</p>
+              <p>
+                <strong>Material:</strong>
+                PVC Termoformado
+              </p>
+              <p>
+                <strong>Dimensiones:</strong>
+                1.2m x 0.5m
+              </p>
+              <p>
+                <strong>Instalación:</strong>
+                Incluida en el precio
+              </p>
+              <hr>
+              <p class="price mb-0">
+                Desde $450
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<head>
+  <style>
+    body,
+    main,
+    header,
+    nav,
+    section {
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-header {
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 5px 0;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 4;
+      background: black !important;
+      box-shadow: none;
+      border: none;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-section .video-wrap video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .section-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-section h1,
+    .hero-section small,
+    .hero-section a,
+    .hero-section h5 {
+      color: white;
+    }
+
+    .navbar,
+    .site-header,
+    .hero-section {
+      margin-bottom: 0 !important;
+    }
+    .fondob{
+      background-color: white;
+      border-radius: 50px;
+    }
+  </style>
+</head>
+
+
+<section class="ticket-section contact-section section-padding" id="section_6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-12 mx-auto">
+        <h2 class="text-center mb-4">Programa tu visita ya!</h2>
+
+        <form action="servidor.html" method="get" class="custom-form contact-form shadow-lg p-4 fondob" action="servidor.html"
+          method="get">
+          <div class="contact-form-body fondob" >
+            <div class="row mb-3 ">
+              <div class="col-lg-6 col-md-6 col-12 mb-3">
+                <label for="contact-name" class="form-label text-muted small mb-1 fw-bold py-2">Nombre Completo</label>
+                <input type="text" name="contact-name" id="contact-name" placeholder="Juan Perez"
+                  class="form-control rounded-0 border-0 border-bottom" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{1,15}">
+              </div>  
+
+              <div class="col-lg-6 col-md-6 col-12 mb-3 fw-bold">
+                <label for="contact-email" class="form-label text-muted small mb-1 fw-bold py-2">E-mail</label>
+                <input type="email" name="contact-email" id="contact-email" placeholder="ejm@mdl.com"
+                  class="form-control rounded-0 border-0 border-bottom" pattern="[^ @]*@[^ @]*" required>
+              </div>
+            </div>
+
+            <!-- <div class="mb-4">
+              <label for ="contact-company" class="form-label text-muted small mb-1">Equipo favorito</label>
+              <input 
+                type="text" 
+                name="contact-company" 
+                id="contact-company" 
+                class="form-control rounded-0 border-0 border-bottom" required>
+            </div> -->
+
+            <div class="mb-4">
+              <label for="contact-message" class="form-label text-muted small mb-1 fw-bold py-2">Mensaje</label>
+              <textarea name="contact-message" rows="4" class="form-control rounded-0 border-0 border-bottom"
+                id="contact-message" style="resize: none; 
+                max-width: 100%;
+                height: 150px;"
+                >
+              </textarea>
+            </div>
+            <!-- <div class="col-md-6">
+                <div class="map_container ">
+                  <div id="googleMap"></div>
+                </div>
+              </div> -->
+            <h6 class="mt-4 centrado text-center">Indica la ubicación de entrega/visita</h6>
+            <div id="map-container" class="centrado text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042775.5026438474!2d-80.97313496173408!3d-0.19206468533927606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5708325efe437%3A0x94cead1b5e2aa19e!2sPichincha!5e0!3m2!1ses-419!2sec!4v1763074618766!5m2!1ses-419!2sec"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="centrado text-center"></iframe>
+
+            </div>
+            <!--  -->
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill text-uppercase">
+                Enviar Mensaje
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,480 @@
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Estética - Tablas y Testimonios</title> -->
+  <style>
+    :root {
+      --color-primary: #ffcc00;
+      --color-dark: #0b0b0b;
+      --color-text-light: #fff;
+      --color-text-muted: #ccc;
+      --color-table-header: #1a1a1a;
+      --color-table-row-even: #151515;
+      --color-table-row-hover: #222;
+    }
+
+    body,
+    main,
+    header,
+    nav,
+    section,
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .site-header {
+      color: #000;
+      padding: 5px 0;
+
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 4;
+      background: black !important;
+      box-shadow: none;
+      border: none;
+    }
+
+    .hero-section {
+      min-height: 100vh;
+      background-color: #333;
+    }
+
+    .tabla-posiciones {
+      background-color: white;
+      color: var(--color-text-light);
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .tabla-posiciones h2 {
+      color: black;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+      border-bottom: 2px solid var(--color-primary);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .tabla-posiciones h3 {
+      text-align: left;
+      color: black;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .tabla-wrapper {
+      overflow-x: auto;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 700px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead th {
+      color: var(--color-primary);
+      padding: 12px 8px;
+      border-bottom: 3px solid var(--color-primary);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    tbody td {
+      padding: 10px 8px;
+      border-bottom: 1px solid black;
+      vertical-align: middle;
+    }
+
+    tbody tr td:first-child {
+      font-weight: bold;
+      color: var(--color-primary);
+    }
+
+    tbody tr td:last-child strong {
+      font-size: 1.1em;
+      color: var(--color-primary);
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #1b0f0a;
+    }
+
+    tbody tr:hover {
+      background-color: var(--color-table-row-hover);
+      transition: background-color 0.3s ease;
+    }
+
+    tfoot {
+      background-color: #1b0f0a;
+      color: var(--color-text-muted);
+      font-size: 0.8rem;
+    }
+
+    .leyenda {
+      padding: 10px;
+      text-align: right;
+    }
+
+    .testimonios-section {
+      background-color: #ffffff;
+      /* 0b0b0b*/
+      padding: 80px 0;
+      color: #333;
+    }
+
+    .testimonios-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .testimonios-header h1 {
+      font-size: 3rem;
+      color: var(--color-dark);
+      margin-bottom: 5px;
+    }
+
+    .testimonios-header h2 {
+      font-size: 2rem;
+      color: var(--color-dark);
+      margin-bottom: 15px;
+    }
+
+    .testimonios-header small {
+      color: var(--color-primary);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .testimonios-info {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .info-box {
+      flex: 1;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-top: 3px solid var(--color-primary);
+    }
+
+    .info-box h3 {
+      color: var(--color-dark);
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .info-box p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 768px) {
+      .testimonios-info {
+        flex-direction: column;
+      }
+
+      .tabla-posiciones h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .color-claro {
+      background-color: #7a431f;
+    }
+
+    .color2 {
+      background-color: #8b4a1d;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section class="testimonios-section tabla-posiciones ">
+    <div class="container">
+
+      <div class="testimonios-header">
+        <small>#TestimoniosModulARTCR</small>
+        <h2>Nuestros proyectos y lo que nuestros clientes dicen</h2>
+        <h1>Testimonios</h1>
+      </div>
+
+      <div class="testimonios-info">
+        <div class="info-box">
+          <h3>Oficinas</h3>
+          <p>Cada oficina entregada es una historia de confianza y transformación. Nuestros clientes comparten su
+            experiencia al recibir sus espacios remodelados o construidos con nosotros.</p>
+        </div>
+        <div class="info-box">
+          <h3>Muebles a Medida</h3>
+          <p>Diseñamos muebles a la medida de tus espacios, necesidades y estilo. Nuestros clientes comparten su
+            experiencia al recibir piezas únicas que combinan funcionalidad y diseño.</p>
+        </div>
+        <div class="info-box">
+          <h3>Hogares</h3>
+          <p>Los hogares son nuestra especialidad. La mayoría de nuestros proyectos y testimonios nacen en espacios
+            donde cada detalle cuenta: cocinas, clósets, salas y dormitorios diseñados a medida.</p>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/aLkEafbOwmc?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/qfzWz06ZTmM?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/MOxaczzr00k?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/f08i5EqaYQk?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/iZfchv7jbzY?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/2v1toDlJLAI?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/KIqT75u_pdI?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/fHuxm2gTmDY?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VsAfYg6dWe0?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/asu_Spx19yo?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/yBIl0yt9ceI?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/0UMd9n3HLBI?controls=1&rel=0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="tabla-posiciones ">
+    <div class="container ">
+      <h2>Rendimiento de nuestras lineas de diseño</h2>
+      <div class="tabla-wrapper color-claro">
+        <table>
+          <thead>
+            <tr>
+              <th>Rango</th>
+              <th>Línea de Diseño</th>
+              <th>Proyectos</th>
+              <th>Entregas</th>
+              <th>Satisfacción</th>
+              <th>Reclamos</th>
+              <th>Funcionalidad</th>
+              <th>Estética</th>
+              <th>Valoración</th>
+              <th>Desempeño</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alta</td>
+              <td>Cocinas Modulares</td>
+              <td>Numerosos proyectos realizados</td>
+              <td>Entregas siempre puntuales</td>
+              <td>Clientes muy satisfechos</td>
+              <td>Sin reclamos</td>
+              <td>Excelente funcionalidad</td>
+              <td>Diseño sobresaliente</td>
+              <td>Valoración destacada</td>
+              <td><strong>Rendimiento superior</strong></td>
+
+            </tr>
+            <tr>
+              <td>Alta</td>
+              <td>Salas Personalizadas</td>
+              <td>Alta demanda</td>
+              <td>Entregas confiables</td>
+              <td>Clientes satisfechos</td>
+              <td>Muy pocos ajustes</td>
+              <td>Funcional y versátil</td>
+              <td>Estética moderna</td>
+              <td>Muy buena aceptación</td>
+              <td><strong>Excelente desempeño</strong></td>
+
+            </tr>
+            <tr>
+              <td>Media-Alta</td>
+              <td>Closets y Armarios</td>
+              <td>Proyectos constantes</td>
+              <td>Entrega eficiente</td>
+              <td>Buena satisfacción</td>
+              <td>Casos mínimos</td>
+              <td>Alta funcionalidad</td>
+              <td>Diseño elegante</td>
+              <td>Valoración positiva</td>
+              <td><strong>Muy buen resultado</strong></td>
+            </tr>
+            <tr>
+              <td>Media-Alta</td>
+              <td>Dormitorios Modulares</td>
+              <td>Implementación sólida</td>
+              <td>Entrega confiable</td>
+              <td>Clientes conformes</td>
+              <td>Reclamos aislados</td>
+              <td>Buen rendimiento</td>
+              <td>Estética cálida</td>
+              <td>Buena percepción</td>
+              <td><strong>Desempeño notable</strong></td>
+            </tr>
+            <tr>
+              <td>Media</td>
+              <td>Oficinas y Estudios</td>
+              <td>Proyectos funcionales</td>
+              <td>Entrega puntual</td>
+              <td>Clientes satisfechos</td>
+              <td>Reclamos mínimos</td>
+              <td>Diseño práctico</td>
+              <td>Estilo profesional</td>
+              <td>Valoración estable</td>
+              <td><strong>Buen rendimiento</strong></td>
+            </tr>
+            <tr>
+              <td>Media</td>
+              <td>Peinadoras</td>
+              <td>Demanda moderada</td>
+              <td>Entrega regular</td>
+              <td>Clientes conformes</td>
+              <td>Casos puntuales</td>
+              <td>Funcionalidad aceptable</td>
+              <td>Diseño delicado</td>
+              <td>Percepción positiva</td>
+              <td><strong>Rendimiento sólido</strong></td>
+            </tr>
+            <tr>
+              <td>Media</td>
+              <td>Zapateras</td>
+              <td>Proyectos específicos</td>
+              <td>Entrega cumplida</td>
+              <td>Clientes satisfechos</td>
+              <td>Reclamos ocasionales</td>
+              <td>Uso eficiente</td>
+              <td>Diseño compacto</td>
+              <td>Buena aceptación</td>
+              <td><strong>Desempeño estable</strong></td>
+            </tr>
+            <tr>
+              <td>Baja-Media</td>
+              <td>Centros de Entretenimiento</td>
+              <td>Proyectos selectivos</td>
+              <td>Entrega puntual</td>
+              <td>Clientes conformes</td>
+              <td>Reclamos aislados</td>
+              <td>Funcionalidad adecuada</td>
+              <td>Estética moderna</td>
+              <td>Valoración positiva</td>
+              <td><strong>Rendimiento aceptable</strong></td>
+
+            </tr>
+            <tr>
+              <td>Baja-Media</td>
+              <td>Estanterías Modulares</td>
+              <td>Demanda puntual</td>
+              <td>Entrega cumplida</td>
+              <td>Clientes satisfechos</td>
+              <td>Casos mínimos</td>
+              <td>Uso versátil</td>
+              <td>Diseño limpio</td>
+              <td>Percepción favorable</td>
+              <td><strong>Desempeño correcto</strong></td>
+
+            </tr>
+            <tr>
+              <td>Baja</td>
+              <td>Cabeceras Decorativas</td>
+              <td>Proyectos limitados</td>
+              <td>Entrega puntual</td>
+              <td>Clientes conformes</td>
+              <td>Sin incidencias</td>
+              <td>Funcionalidad básica</td>
+              <td>Diseño atractivo</td>
+              <td>Valoración estable</td>
+              <td><strong>Rendimiento moderado</strong></td>
+
+            </tr>
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="10" class="leyenda"><em>Actualizado a noviembre 2025 • Fuente: Datos internos ModulART</em>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+  </section>
+
+</body>

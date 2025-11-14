@@ -285,7 +285,7 @@ strong {
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
-  color: var(--secondary-color);
+  color: red;
 }
 
 
@@ -506,8 +506,8 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
-  background-color: #704010;
+  
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -644,8 +644,8 @@ strong {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
-  background-color: #242424;
+  /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
+  /* background-color: #242424; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -797,6 +797,7 @@ strong {
   padding-top: 13px;
   padding-bottom: 13px;
   outline: none;
+  
 }
 
 .custom-form button[type="submit"] {
@@ -880,7 +881,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: gray;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
